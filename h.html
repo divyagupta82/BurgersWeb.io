@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Print Date</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+    }
+    #date {
+        font-size: 24px;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+<label for="dateInput">Enter Date:</label>
+<input type="date" id="dateInput">
+<button onclick="printDate()">Print Date</button>
+<div id="output"></div>
+
+<script>
+    function printDate() {
+        // Get the value from the input field
+        var inputDate = document.getElementById('dateInput').value;
+
+        // Display the date on the page
+        document.getElementById('output').innerText = 'Selected Date is: ' + inputDate;
+    }
+</script>
+</body>
+</html>
